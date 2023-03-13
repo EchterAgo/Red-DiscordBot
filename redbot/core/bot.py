@@ -839,8 +839,8 @@ class RedBase(
         channel = message.channel
         guild = message.guild
 
-        if message.author.bot and not message.author.id in (1084649572393037974, 1083903530722656388):
-            return False
+        # if message.author.bot and not message.author.id in (1084649572393037974, 1083903530722656388):
+        #     return False
 
         if guild:
             assert isinstance(channel, discord.abc.GuildChannel)  # nosec
