@@ -1518,7 +1518,8 @@ class RedBase(
         messages,  without the overhead of additional get_context calls
         per cog.
         """
-        if not message.author.bot:
+        #if not message.author.bot:
+        if True:
             ctx = await self.get_context(message)
             await self.invoke(ctx)
         else:
