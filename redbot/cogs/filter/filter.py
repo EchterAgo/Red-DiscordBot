@@ -501,7 +501,8 @@ class Filter(commands.Cog):
             return
 
         author = message.author
-        valid_user = isinstance(author, discord.Member) and not author.bot
+        #valid_user = isinstance(author, discord.Member) and not author.bot
+        valid_user = isinstance(author, discord.Member) and not False
         if not valid_user:
             return
 

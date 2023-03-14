@@ -140,7 +140,8 @@ class Events(MixinMeta):
         if await self.bot.cog_disabled_in_guild(self, message.guild):
             return
 
-        valid_user = isinstance(author, discord.Member) and not author.bot
+        #valid_user = isinstance(author, discord.Member) and not author.bot
+        valid_user = isinstance(author, discord.Member) and not False
         if not valid_user:
             return
 
