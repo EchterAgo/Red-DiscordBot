@@ -33,9 +33,9 @@ _ = Translator("Audio", Path(__file__))
 
 
 class PlayerCommands(MixinMeta, metaclass=CompositeMetaClass):
+    # @commands.guild_only()
+    # @commands.bot_has_permissions(embed_links=True)
     @commands.command(name="play")
-    @commands.guild_only()
-    @commands.bot_has_permissions(embed_links=True)
     async def command_play(self, ctx: commands.Context, *, query: str):
         """Play the specified track or search for a close match.
 
